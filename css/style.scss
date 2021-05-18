@@ -1,0 +1,59 @@
+// global styles
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+}
+
+// header
+header {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    .logo {
+        display: none;
+    }
+    .register {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        input {
+            font-family: 'Montserrat', serif;
+            font-weight: 700;
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 10px 18px;
+        }
+        .signup {
+            border: 2px solid #fff;
+            border-radius: 20px;
+        }
+    }
+}
+
+// promo
+.promo {
+    height: 100vh;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0,0,0, .5);
+    }
+}
